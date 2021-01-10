@@ -50,7 +50,7 @@ getXML.onclick=()=>{
             if(request.status>=200 && request.status<300){
                const dom=request.responseXML
                const text=dom.getElementsByTagName('warning')[0].textContent
-               console.log(text.trim)
+               console.log(text.trim())
             }
             else{
                 alert('failed')
